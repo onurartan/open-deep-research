@@ -1,4 +1,4 @@
-import { openai } from '@ai-sdk/openai';
+import { mistral } from '@ai-sdk/mistral';
 import { experimental_wrapLanguageModel as wrapLanguageModel } from 'ai';
 import { openrouter } from '@openrouter/ai-sdk-provider';
 import { togetherai } from '@ai-sdk/togetherai';
@@ -65,7 +65,7 @@ export const customModel = (apiIdentifier: string, forReasoning: boolean = false
   // Select provider based on model
   const model = modelId === 'deepseek-ai/DeepSeek-R1'
     ? togetherai(modelId)
-    : openai(modelId);
+    : mistral(modelId);
 
   console.log("Using model:", modelId);
 
