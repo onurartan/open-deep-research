@@ -15,6 +15,12 @@ export const models: Array<Model> = [
     description: 'For complex, multi-step tasks',
   },
   {
+    id: 'mistral-large-latest',
+    label: 'mistral-large-latest',
+    apiIdentifier: 'mistral-large-latest',
+    description: 'For complex, multi-step tasks',
+  },
+  {
     id: 'gpt-4o-mini',
     label: 'GPT 4o Mini',
     apiIdentifier: 'gpt-4o-mini',
